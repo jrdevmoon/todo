@@ -8,7 +8,7 @@ const dm = new DM ()
 
 dm.map (
   {
-    driveName: "_SYSTEM",
+    tag: "_SYSTEM",
     path: root,
     monitor: "yes"
   }
@@ -16,7 +16,6 @@ dm.map (
 
 dm.map (
   {
-    driveName : "_root",
     path: '.'
   }
 )

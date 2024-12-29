@@ -4,9 +4,9 @@ const DIRECTORYMAP = class
 
   #config = require (`${this.#root}/config.json`)
 
-  #Drive = require (`${this.#root}${this.#config.D.path}`)
+  #Storage = require (`${this.#root}${this.#config.S.path}`)
 
-  DRIVE = []
+  STORAGE = []
   COUNT = 0
 
   map (prop)
@@ -14,22 +14,22 @@ const DIRECTORYMAP = class
     this.COUNT ++
 
     const temp = {
-      driveName : null,
+      tag : null,
       path : null,
       monitor : "no"
     }
 
     if (prop)
     {
-      if (prop.driveName) temp.driveName = prop.driveName 
+      if (prop.tag) temp.tag = prop.tag
       if (prop.path) temp.path = prop.path
       if (prop.monitor) temp.monitor = prop.monitor
       
       if (temp.path != null)
       {
-        this.DRIVE.push  (new this.#Drive (
+        this.STORAGE.push  (new this.#Storage (
           {
-            name : temp.driveName,
+            tag : temp.tag,
             path : temp.path,
             monitor : temp.monitor
           }
