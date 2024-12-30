@@ -17,7 +17,9 @@ const DRIVE = class
       if (prop.tag) this.tag = prop.tag
       if (prop.path) this.root = prop.path
       if (prop.monitor) this.monitor = prop.monitor
-        
+      
+      this.name = this.#path.parse (this.root)
+      this.
     }  
     
   }

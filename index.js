@@ -20,4 +20,4 @@ dm.map (
   }
 )
 
-console.log (dm)
+console.dir (dm, {depth: 10})
