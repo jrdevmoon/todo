@@ -6,5 +6,9 @@
   "C":
   {
     "path": "/container.js"
+  },
+  "F":
+  {
+    "path": "/file.js"
   }
 }

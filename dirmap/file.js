@@ -1,8 +1,8 @@
-const CONTAINER = class
+const FILE = class
 {
   constructor (path)
   {
     this.path = path
   }
 }
-module.exports = CONTAINER
+module.exports = FILE
