@@ -34,7 +34,6 @@ const DIRECTORYMAP = class
             monitor : temp.monitor
           }
         ))
-        
       }
       if (temp.path == null)  console.log ("Error: No path was provided to be mapped.")
     }

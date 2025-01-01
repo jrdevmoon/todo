@@ -7,6 +7,14 @@
   {
     "path": "/container.js"
   },
+  "JSON":
+  {
+    "path": "/json.js"
+  },
+  "JS":
+  {
+    "path": "/js.js"
+  },
   "F":
   {
     "path": "/file.js"

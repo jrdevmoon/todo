@@ -5,7 +5,7 @@ const config = require (`${root}/config.json`)
 const DM = require (`${root}${config.DM.path}`)
 
 const dm = new DM ()
-
+/*
 dm.map (
   {
     tag: "_SYSTEM",
@@ -13,10 +13,10 @@ dm.map (
     monitor: "yes"
   }
 )
-
+*/
 dm.map (
   {
-    path: '.'
+    path: './test'
   }
 )
 
