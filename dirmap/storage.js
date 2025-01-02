@@ -1,5 +1,3 @@
-const { urlToHttpOptions } = require('url')
-
 const DRIVE = class
 {
   #root = __dirname
@@ -11,13 +9,12 @@ const DRIVE = class
   #JS = require (`${this.#root}${this.#config.JS.path}`)
   #FILE = require (`${this.#root}${this.#config.F.path}`)
 
-  DATA = null
-
   constructor (prop)
   {
     if (prop)
     {
-      this.DATA = {}
+      if (!(this.DATA)) this.DATA = {}
+      
       if (prop.tag) this.DATA.TAG = prop.tag
       if (prop.monitor) this.DATA.MONITOR = prop.monitor
       if (prop.path) this.map (prop.path)

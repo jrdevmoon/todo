@@ -7,7 +7,7 @@ const DIRECTORYMAP = class
 
   #Storage = require (`${this.#root}${this.#config.S.path}`)
 
-//drive mapper
+//storage mapper
   map (prop)
   {
     const temp = {
