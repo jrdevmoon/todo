@@ -4,19 +4,20 @@ const config = require (`${root}/config.json`)
 
 const DM = require (`${root}${config.DM.path}`)
 
-const dm = new DM ()
-/*
+const dm = new DM
+
 dm.map (
   {
-    tag: "_SYSTEM",
-    path: root,
+    tag: "D:",
+    path: `${root}/dirmap`,
     monitor: "yes"
   }
 )
-*/
+
 dm.map (
   {
-    path: './test'
+    tag: "C:",
+    path: './test/'
   }
 )
 
